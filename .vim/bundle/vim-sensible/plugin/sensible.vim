@@ -23,7 +23,6 @@ set complete-=i
 set smarttab
 
 set nrformats-=octal
-set shiftround
 
 set ttimeout
 set ttimeoutlen=100
@@ -53,6 +52,14 @@ endif
 
 if &listchars ==# 'eol:$'
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
+if v:version > 703 || v:version == 703 && has("patch541")
+  set formatoptions+=j " Delete comment character when joining commented lines
+endif
+
+if has('path_extra')
+  setglobal tags-=./tags tags^=./tags;
 endif
 
 if &shell =~# 'fish$'
