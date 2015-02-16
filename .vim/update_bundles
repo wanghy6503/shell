@@ -25,8 +25,12 @@ git_bundles = [
 "git://github.com/tsaleh/vim-tmux.git",
 "git://github.com/vim-ruby/vim-ruby.git",
 "git://github.com/vim-scripts/Gist.vim.git",
+"git://github.com/vim-scripts/jquery.git",
+"git://github.com/vim-scripts/SyntaxRange.git",
 "git://github.com/derekwyatt/vim-scala.git",
-"git://github.com/tpope/vim-sensible.git"
+"git://github.com/tpope/vim-sensible.git",
+"git://github.com/tfnico/vim-gradle.git",
+"git://github.com/chase/vim-ansible-yaml.git"
 ]
 
 						vim_org_scripts = [
