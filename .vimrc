@@ -22,14 +22,17 @@ set si " Smart indent
 set autoindent " Copy indent from the row above
 "set ai           " 自動縮排
 "set shiftwidth=4 " 設定縮排寬度 = 4
+"
+set expandtab   " 用 space 代替 tab
 set expandtab
 set tabstop=4    " tab 的字元數
-set softtabstop=4
-"set expandtab   " 用 space 代替 tab
-"set ruler        " 顯示右下角設定值
-"set backspace=2  " 在 insert 也可用 backspace
-"set ic           " 設定搜尋忽略大小寫
-"set ru           " 第幾行第幾個字
+set shiftwidth=4 " size of an indent
+set softtabstop=4 " a combination of spaces and tabs are used to simulate tab stops at a width other than the (hard)tabstop
+
+set ruler        " 顯示右下角設定值
+set backspace=2  " 在 insert 也可用 backspace
+set ic           " 設定搜尋忽略大小寫
+set ru           " 第幾行第幾個字
 "set hlsearch     " 設定高亮度顯示搜尋結果
 "set incsearch    " 在關鍵字還沒完全輸入完畢前就顯示結果
 set smartindent  " 設定 smartindent
@@ -38,5 +41,6 @@ set history=100  " 保留 100 個使用過的指令
 "set cursorline   " 顯示目前的游標位置
 set laststatus=2
 set statusline=%4*%<\%m%<[%f\%r%h%w]\[%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
+
 
 
